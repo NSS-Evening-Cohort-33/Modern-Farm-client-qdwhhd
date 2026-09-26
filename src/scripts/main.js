@@ -7,6 +7,7 @@ Potato	    32	    2           Wheat	    230	    6
 */
 
 import { createPlan } from './plan.js'
+import {addPlant, usePlants} from './field.js'
 
 // imported seed functions
 import { createAsparagus } from './seeds/asparagus.js'
@@ -25,13 +26,16 @@ const sunflowerSeed = createSunflower("sunflower", 380, 3)
 const wheatSeed = createWheat("wheat", 230, 6)
 
 // test-logging of plant objects
-console.log(asparagusSeed)
-console.log(cornSeed)
-console.log(potatoSeed)
-console.log(soybeanSeed)
-console.log(sunflowerSeed)
-console.log(wheatSeed)
+// console.log(asparagusSeed)
+// console.log(cornSeed)
+// console.log(potatoSeed)
+// console.log(soybeanSeed)
+// console.log(sunflowerSeed)
+// console.log(wheatSeed)
 
 // test-logging of The Plan
 const yearlyPlan = createPlan()
-console.log(yearlyPlan)
+// console.log(yearlyPlan)
+
+
+console.log(addPlant(asparagusSeed))
