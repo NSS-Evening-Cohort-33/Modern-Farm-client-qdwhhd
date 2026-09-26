@@ -29,21 +29,9 @@ export const sunflowerSeed = createSunflower("sunflower", 380, 3)
 export const wheatSeed = createWheat("wheat", 230, 6)
 
 
-// test-logging of plant objects
-// console.log(asparagusSeed)
-// console.log(cornSeed)
-// console.log(potatoSeed)
-// console.log(soybeanSeed)
-// console.log(sunflowerSeed)
-// console.log(wheatSeed)
-
-// test-logging of The Plan
 const yearlyPlan = createPlan()
-//console.log(yearlyPlan)
-
 
 const field = usePlants()
-//console.log(field)
 
 const plantedSeeds = plantSeeds(yearlyPlan)
 
