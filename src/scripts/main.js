@@ -7,7 +7,8 @@ Potato	    32	    2           Wheat	    230	    6
 */
 
 import { createPlan } from './plan.js'
-import {addPlant, usePlants} from './field.js'
+import { usePlants } from './field.js'
+import { harvestPlants } from './harvester.js'
 
 // imported seed functions
 import { createAsparagus } from './seeds/asparagus.js'
@@ -35,4 +36,6 @@ const field = usePlants()
 
 const plantedSeeds = plantSeeds(yearlyPlan)
 
-console.log(plantedSeeds)
+const plantsHarvested = harvestPlants(plantedSeeds)
+
+console.log(plantsHarvested)
