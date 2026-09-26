@@ -17,13 +17,17 @@ import { createSoybean } from './seeds/soybean.js'
 import { createSunflower } from './seeds/sunflower.js'
 import { createWheat } from './seeds/wheat.js'
 
+// sowing the field
+import { plantSeeds } from './tractor.js'
+
 // assignment of plant properties
-const asparagusSeed = createAsparagus("asparagus", 24, 4)
-const cornSeed = createCorn("corn", 180, 6)
-const potatoSeed = createPotato("potato", 32, 2)
-const soybeanSeed = createSoybean("soybean", 20, 4)
-const sunflowerSeed = createSunflower("sunflower", 380, 3)
-const wheatSeed = createWheat("wheat", 230, 6)
+export const asparagusSeed = createAsparagus("asparagus", 24, 4)
+export const cornSeed = createCorn("corn", 180, 6)
+export const potatoSeed = createPotato("potato", 32, 2)
+export const soybeanSeed = createSoybean("soybean", 20, 4)
+export const sunflowerSeed = createSunflower("sunflower", 380, 3)
+export const wheatSeed = createWheat("wheat", 230, 6)
+
 
 // test-logging of plant objects
 // console.log(asparagusSeed)
@@ -35,14 +39,12 @@ const wheatSeed = createWheat("wheat", 230, 6)
 
 // test-logging of The Plan
 const yearlyPlan = createPlan()
-// console.log(yearlyPlan)
-
-
-addPlant(asparagusSeed)
-addPlant(potatoSeed)
-addPlant(wheatSeed)
-addPlant(cornSeed)
+//console.log(yearlyPlan)
 
 
 const field = usePlants()
-console.log(field)
+//console.log(field)
+
+const plantedSeeds = plantSeeds(yearlyPlan)
+
+console.log(plantedSeeds)
