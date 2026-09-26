@@ -38,4 +38,11 @@ const yearlyPlan = createPlan()
 // console.log(yearlyPlan)
 
 
-console.log(addPlant(asparagusSeed))
+addPlant(asparagusSeed)
+addPlant(potatoSeed)
+addPlant(wheatSeed)
+addPlant(cornSeed)
+
+
+const field = usePlants()
+console.log(field)
