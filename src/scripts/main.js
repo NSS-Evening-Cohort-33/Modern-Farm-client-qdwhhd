@@ -9,6 +9,8 @@ Potato	    32	    2           Wheat	    230	    6
 import { createPlan } from './plan.js'
 import { usePlants } from './field.js'
 import { harvestPlants } from './harvester.js'
+import { catalog } from './catalog.js'
+
 
 // imported seed functions
 import { createAsparagus } from './seeds/asparagus.js'
@@ -39,3 +41,6 @@ const plantedSeeds = plantSeeds(yearlyPlan)
 const plantsHarvested = harvestPlants(plantedSeeds)
 
 console.log(plantsHarvested)
+
+const plantHTML = document.querySelector(".container")
+plantHTML.innerHTML = catalog(plantsHarvested)
