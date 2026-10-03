@@ -10,26 +10,7 @@ import { createPlan } from './plan.js'
 import { usePlants } from './field.js'
 import { harvestPlants } from './harvester.js'
 import { catalog } from './catalog.js'
-
-
-// imported seed functions
-import { createAsparagus } from './seeds/asparagus.js'
-import { createCorn } from './seeds/corn.js'
-import { createPotato } from './seeds/potato.js'
-import { createSoybean } from './seeds/soybean.js'
-import { createSunflower } from './seeds/sunflower.js'
-import { createWheat } from './seeds/wheat.js'
-
-// sowing the field
-import { plantSeeds } from './tractor.js'
-
-// assignment of plant properties
-export const asparagusSeed = createAsparagus("asparagus", 24, 4)
-export const cornSeed = createCorn("corn", 180, 6)
-export const potatoSeed = createPotato("potato", 32, 2)
-export const soybeanSeed = createSoybean("soybean", 20, 4)
-export const sunflowerSeed = createSunflower("sunflower", 380, 3)
-export const wheatSeed = createWheat("wheat", 230, 6)
+import { plantSeeds } from './tractor.js' // sowing the field
 
 
 const yearlyPlan = createPlan()
@@ -40,7 +21,7 @@ const plantedSeeds = plantSeeds(yearlyPlan)
 
 const plantsHarvested = harvestPlants(plantedSeeds)
 
-console.log(plantsHarvested)
-
 const plantHTML = document.querySelector(".container")
 plantHTML.innerHTML = catalog(plantsHarvested)
+
+console.log(plantedSeeds)

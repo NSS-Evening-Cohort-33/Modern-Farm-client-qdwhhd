@@ -1,9 +1,10 @@
-
-export const createWheat = (type, height, output) => {
+const createWheat = () => {
     let wheatItem = {
-        type: type,
-        height: height,
-        output: output
+        type: "wheat",
+        height: 230,
+        output: 6
     }
     return wheatItem
 }
+
+export const wheatSeed = createWheat()

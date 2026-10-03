@@ -34,3 +34,19 @@ h1,h2,h3,h4,h5,h6 {
     background-color: darksalmon;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightblue;
+    font-size: 30px;
+}
+
+.plant-type {
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    
+}
+

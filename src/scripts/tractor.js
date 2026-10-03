@@ -1,11 +1,13 @@
 import { usePlants } from './field.js'
 import { addPlant } from './field.js'
-import {asparagusSeed} from './main.js'
-import {cornSeed} from './main.js'
-import {potatoSeed} from './main.js'
-import {soybeanSeed} from './main.js'
-import {sunflowerSeed} from './main.js'
-import {wheatSeed} from './main.js'
+
+// imported seeds
+import { asparagusSeed } from './seeds/asparagus.js'
+import { cornSeed } from './seeds/corn.js'
+import { potatoSeed } from './seeds/potato.js'
+import { soybeanSeed } from './seeds/soybean.js'
+import { sunflowerSeed } from './seeds/sunflower.js'
+import { wheatSeed } from './seeds/wheat.js'
 
 export const plantSeeds = (plan) => {
         for (const row of plan) {

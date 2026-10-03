@@ -1,9 +1,10 @@
-
-export const createPotato = (type, height, output) => {
+const createPotato = () => {
     let potatoItem = {
-        type: type,
-        height: height,
-        output: output
+        type: "potato",
+        height: 32,
+        output: 2
     }
     return potatoItem
 }
+
+export const potatoSeed = createPotato()
